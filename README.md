@@ -70,37 +70,29 @@ Linux:		Debian
 ## EFI files
 
 ### Drivers
-•	HfsPlus.efi			(HFS file system driver)
-•	OpenCanopy.efi		(OpenCore plugin bootloader GUI)
-•	OpenRuntime.efi		(OpenCore plugin OC_FIRMWARE_RUNTIME protocol)
+- HfsPlus.efi			(HFS file system driver)
+- OpenCanopy.efi		(OpenCore plugin bootloader GUI)
+- OpenRuntime.efi		(OpenCore plugin OC_FIRMWARE_RUNTIME protocol)
 
 ### ACPI 
-•	SSDT-SBUS-MCHC.aml	(System Management Bus)
-•	SSDT-PLUG.aml		(Better CPU management)
-•	SSDT-AWAC.aml		(Legacy RTC clock)
-•	SSDT-EC.ami		(Embedded controller)
-•	SSDT-UIAC.aml		(USB. Switched to using kext*)
+- SSDT-SBUS-MCHC.aml	(System Management Bus)
+- SSDT-PLUG.aml		(Better CPU management)
+- SSDT-AWAC.aml		(Legacy RTC clock)
+- SSDT-EC.ami		(Embedded controller)
+- SSDT-UIAC.aml		(USB. Switched to using kext*)
 
 All done manually via DSDT dump, decompiling, converting to SSDTS and compiling SSDTs	
 
 ### Kexts
-AppleALC.kext				(Audio)
-CPUFriendDataProvider.kext		(CPU power management and performance tuning)
-IntelMausi.kext			(Ethernet)
-Lilu.kext				(OpenCore, allows kexts to patch)
-NVMeFix.kext				(Support for non-Apple NVMe drives)
-RadeonSensor.kext			(Reading GPU temps)
-SMCProcessor.kext			(CPU temps and power)
-SMCRadeonGPU.kext			(GPU sensor output)
-SMCSuperIO.kext			(hardware monitoring)
-USBPorts.kext				(define USB ports. Replaces SSDT-UIAC)
-VirtualSMC.kext			(Emulates the System Management Controller)
-WhateverGreen.kext			(OpenCore, graphic patching)
-
-![image](https://github.com/oxonomi/Hackintosh/assets/130058100/33227d3d-356a-41e7-a55a-1207e48115ce)
-
-
-
-
-
-![image](https://github.com/oxonomi/Hackintosh/assets/130058100/30b17b02-10b3-4968-800c-baf73c14d53a)
+- AppleALC.kext				        (Audio)
+- CPUFriendDataProvider.kext  (CPU power management and performance tuning)
+- IntelMausi.kext			        (Ethernet)
+- Lilu.kext				            (OpenCore, allows kexts to patch)
+- NVMeFix.kext				        (Support for non-Apple NVMe drives)
+- RadeonSensor.kext			      (Reading GPU temps)
+- SMCProcessor.kext			      (CPU temps and power)
+- SMCRadeonGPU.kext			      (GPU sensor output)
+- SMCSuperIO.kext			        (hardware monitoring)
+- USBPorts.kext				        (define USB ports. Replaces SSDT-UIAC)
+- VirtualSMC.kext			        (Emulates the System Management Controller)
+- WhateverGreen.kext			    (OpenCore, graphic patching)
