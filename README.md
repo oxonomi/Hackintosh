@@ -48,10 +48,12 @@ Linux:		Debian
 
 
 ## BIOS Settings
-- | TEST |  test 2 |
-- |--------------------|-------------|
-- | Fast Boot |			          Disable |
-- | Secure Boot | 		        Disable |
+| TEST |  test 2 |
+| -------------------- |-------------|
+| Fast Boot |			          Disable |
+| Secure Boot | 		        Disable |
+
+
 - Serial/COM Port		      Disable
 - VT-d 			              Disable
 - CSM 			              Disable
