@@ -105,7 +105,8 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 
 ### MmioWhitelist > Quirks
 
-|--------|--------| 
+| key | value |
+| ----------------------- | ------------- | 
 | AvoidRuntimeDefrag:  |  true |
 | DevirtualiseMmio:  | true |
 | EnableSafeModeSlide:  | true |
@@ -157,14 +158,23 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | ----------------------- | ------------- | 
 | HideAuxiliary:|  true| 
 
-Misc > Quirks
+### Misc > Quirks
 | key | value |
 | ----------------------- | ------------- | 
 | AppleDebug:|  true| 
 | ApplePanic:|  true| 
 | DisableWatchDog:|  true| 
 | Target:|  83| 
-![image](https://github.com/oxonomi/Hackintosh/assets/130058100/bfcbf76d-c60b-484e-b159-10198e1d2937)
+
+### Misc > Security
+
+| AllowSetDefault: | true	| 
+| BlacklistAppleUpdate:|  true	| 
+| ScanPolicy:|  0	| 
+| SecureBootModel:|  Default	| 
+| Vault:|  Optional| 
+| ----------------------- | ------------- | 
+
 
 
 
