@@ -126,19 +126,12 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | PciRoot(0x0)/Pci(0x2,0x0) (for headless iGPU)| |
 | AAPL,ig-platform-id | AwDFmw== (base64) 0300C89B (hex)|
 | device-id | xZsAAA== (base64) c59b0000 (hex) |
-
 | PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0) | |
 | Shikigva (for Rx 5600) | 80 |
 | PP_PhmSoftPowerPlayTable (for fan control) | [SEE RX 5600 XT fan Control section for data value](#fan-control) |
-
-PciRoot(0x0)/Pci(0x1F,0x3) (for audio)
-layout-id
-AQAAAA== (base64)
-1 (dec)
-No-hda-gfx
-AAAAAA== (base64)
-0 (dec)
-![image](https://github.com/oxonomi/Hackintosh/assets/130058100/f10d9c1e-5210-4d9d-a406-e9db70a3072d)
+| PciRoot(0x0)/Pci(0x1F,0x3) (for audio) | | 
+| layout-id | AQAAAA== (base64) 1 (dec) | 
+| No-hda-gfx | AAAAAA== (base64) 0 (dec)| 
 
 
 
