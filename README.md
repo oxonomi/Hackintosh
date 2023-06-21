@@ -104,7 +104,6 @@ All done manually via DSDT dump, decompiling, converting to SSDTS and compiling 
 Follow the OpenCore guide to determine which properties to enable and disable for your build. Use ProperTree to do an OC snapshot to populate based of your OC files.
 
 ### MmioWhitelist > Quirks
-| key | value |
 | -------------------- | ------------- | 
 | AvoidRuntimeDefrag:  |  true |
 | DevirtualiseMmio:  | true |
@@ -124,14 +123,47 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | key | value |
 | ----------------------- | ------------- | 
 | PciRoot(0x0)/Pci(0x2,0x0) (for headless iGPU)| |
-| AAPL,ig-platform-id | AwDFmw== (base64) 0300C89B (hex)|
-| device-id | xZsAAA== (base64) c59b0000 (hex) |
+| AAPL,ig-platform-id | AwDFmw== (base64), 0300C89B (hex)|
+| device-id | xZsAAA== (base64), c59b0000 (hex) |
 | PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0) | |
 | Shikigva (for Rx 5600) | 80 |
 | PP_PhmSoftPowerPlayTable (for fan control) | [SEE RX 5600 XT fan Control section for data value](#fan-control) |
 | PciRoot(0x0)/Pci(0x1F,0x3) (for audio) | | 
-| layout-id | AQAAAA== (base64) 1 (dec) | 
-| No-hda-gfx | AAAAAA== (base64) 0 (dec)| 
+| layout-id | AQAAAA== (base64), 1 (dec) | 
+| No-hda-gfx | AAAAAA== (base64),  0 (dec)| 
+
+
+
+### Kernel > Quirks
+| key | value |
+| ----------------------- | ------------- | 
+| AppleCpuPmCfgLock: |  false |
+| AppleXcpmCfgLock:|  true |
+| CustomSMBIOSGuid:|  false |
+| DisableIoMapper:|  true |
+| DisableLinkeditJettison:|  true |
+| DisableRtcChecksum: | false |
+| ExtendBTFeatureFlags:|  false |
+| LapicKernelPanic: | false |
+| LegacyCommpage: | false |
+| PanicNoKextDump: | true |
+| PowerTimeoutKernelPanic:|  true |
+| SetApfsTrimTimeout: | -1 |
+| XhciPortLimit: | false | 
+
+### Misc > Boot
+| key | value |
+| ----------------------- | ------------- | 
+| HideAuxiliary:|  true| 
+
+Misc > Quirks
+| key | value |
+| ----------------------- | ------------- | 
+| AppleDebug:|  true| 
+| ApplePanic:|  true| 
+| DisableWatchDog:|  true| 
+| Target:|  83| 
+![image](https://github.com/oxonomi/Hackintosh/assets/130058100/bfcbf76d-c60b-484e-b159-10198e1d2937)
 
 
 
