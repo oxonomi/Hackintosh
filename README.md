@@ -48,27 +48,24 @@ Linux:		Debian
 
 
 ## BIOS Settings
-| TEST |  test 2 |
 | -------------------- |-------------|
 | Fast Boot |			          Disable |
 | Secure Boot | 		        Disable |
-
-
-- Serial/COM Port		      Disable
-- VT-d 			              Disable
-- CSM 			              Disable
-- Intel SGX 			        Disable
-- Intel Platform Trust	  Disable
-- Resizable BAR		        Disable
-- VT-x			              Enable
-- Above 4G decoding	      Enable
-- Hyper-Threading		      Enable
-- Execute Disable Bit	    Enable
-- EHCI/XHCI Hand-off	    Enable
-- OS type 			          Windows 10 UEFI Mode
-- DVMT Pre-Allocated	    64MB
-- SATA Mode 		          AHCI
-- XMP               			Profile 1
+| Serial/COM Port		 |      Disable |
+| VT-d 			          |     Disable |
+| CSM 			         |      Disable |
+| Intel SGX 			    |     Disable |
+| Intel Platform Trust	|   Disable |
+| Resizable BAR		 |        Disable |
+| VT-x			        |       Enable |
+| Above 4G decoding	  |     Enable |
+| Hyper-Threading		  |     Enable |
+| Execute Disable Bit	  |   Enable |
+| EHCI/XHCI Hand-off	 |    Enable |
+| OS type 			      |     Windows 10 UEFI Mode |
+| DVMT Pre-Allocated	 |    64MB |
+| SATA Mode 		      |     AHCI |
+| XMP               	| 		Profile 1 |
 
 
 ## EFI files
