@@ -98,3 +98,24 @@ All done manually via DSDT dump, decompiling, converting to SSDTS and compiling 
 - USBPorts.kext				        (define USB ports. Replaces SSDT-UIAC)
 - VirtualSMC.kext			        (Emulates the System Management Controller)
 - WhateverGreen.kext			    (OpenCore, graphic patching)
+
+
+## Config.plist
+Follow the OpenCore guide to determine which properties to enable and disable for your build. Use ProperTree to do an OC snapshot to populate based of your OC files.
+
+### MmioWhitelist > Quirks
+| key | value |
+| -------------------- | ------------- | 
+| AvoidRuntimeDefrag:  |  true |
+| DevirtualiseMmio:  | true |
+| EnableSafeModeSlide:  | true |
+| EnableWriteUnprotector:  | false |
+| ProtectUefiServices:  | true |
+| ProvideCustomSlide:  | true |
+| RebuildAppleMemoryMap:  | true |
+| ResizeAppleGpuBars: |  -1 |
+| SetupVirtualMap:  | false |
+| SyncRuntimePermissions: |  true |
+
+
+
