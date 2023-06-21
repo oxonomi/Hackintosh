@@ -167,16 +167,41 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | Target:|  83| 
 
 ### Misc > Security
-
+| key | value |
+| ----------------------- | ------------- | 
 | AllowSetDefault: | true	| 
 | BlacklistAppleUpdate:|  true	| 
 | ScanPolicy:|  0	| 
 | SecureBootModel:|  Default	| 
 | Vault:|  Optional| 
+
+
+
+### NVRAM > ADD
+| key | value |
 | ----------------------- | ------------- | 
+| 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14 (Bootloader background)| | 
+| DefaultBackgroundColor| AAAAAA== (base65), 000000(hex), Black| 
+| 7C436110-AB2A-4BBB-A880-FE41995C9F82| | 
+| boot-args | keepsyms=1 debug=0x100 agdpmod=pikera -wegdbg -liludbg -radnoaudio gfxrst=4| 
+
+
+###PlatformInfo > Generic
+| key | value |
+| ----------------------- | ------------- | 
+| SystemProductName | iMac20,1 | 
+Note: all other platform info is redacted from the config.plst file. Create your own via GenSMBIOS
 
 
 
 
 
 <a id="fan-control"></a>
+## RX 5600 XT fan Control
+
+By default the Graphics card fan only turns on when temp exceeds 60 degrees, theh turns off again when down to 50 degrees, this is too low for my liking.
+To do this we inject new GPU PowerPlayTable data via config.plist. To find this data we need to boot into windows.
+
+
+In windows:
+
