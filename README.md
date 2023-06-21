@@ -48,8 +48,8 @@ Linux:		Debian
 
 
 ## BIOS Settings
-- Fast Boot			          Disable
-- Secure Boot 		        Disable
+- | Fast Boot |			          Disable |
+- | Secure Boot | 		        Disable |
 - Serial/COM Port		      Disable
 - VT-d 			              Disable
 - CSM 			              Disable
