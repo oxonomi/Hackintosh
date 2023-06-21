@@ -104,7 +104,8 @@ All done manually via DSDT dump, decompiling, converting to SSDTS and compiling 
 Follow the OpenCore guide to determine which properties to enable and disable for your build. Use ProperTree to do an OC snapshot to populate based of your OC files.
 
 ### MmioWhitelist > Quirks
-| -------------------- | ------------- | 
+
+|--------|--------| 
 | AvoidRuntimeDefrag:  |  true |
 | DevirtualiseMmio:  | true |
 | EnableSafeModeSlide:  | true |
