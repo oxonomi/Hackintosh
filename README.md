@@ -49,12 +49,11 @@ Linux:		Debian
 - [ProperTree](https://github.com/corpnewt/ProperTree) - GUI for plist + OC snapshot tool 
 - [IORegistry](https://github.com/vulgo/IORegistryExplorer)
 - [GPUZ](https://www.techpowerup.com/download/gpu-z/) - getting gpu bios.rom  
-- [AtomBIOSReeader]![image](https://github.com/oxonomi/Hackintosh/assets/130058100/23b2711a-7b3d-4f79-b222-cb7a15d4307c)
+- [AtomBIOSReeader](https://github.com/kizwan/ATOMBIOSReader) - reading PowerPlayTable data
 - [MorePowerTool](https://www.igorslab.de/en/download-area-new-version-of-morepowertool-mpt-and-final-release-of-redbioseditor-rbe/) - adjust gpu bios.rom 
 - [Red BiosEditor](https://www.igorslab.de/en/download-area-new-version-of-morepowertool-mpt-and-final-release-of-redbioseditor-rbe/)
 - [HxD](https://mh-nexus.de/en/hxd/) - read bios.rom as hex 
 - [liquidctl](https://github.com/liquidctl/liquidctl) - controlling RGB 
-
 
 
 ## EFI files
@@ -213,7 +212,7 @@ To do this we inject new GPU PowerPlayTable data via config.plist. To create thi
 
 In Windows:
 - Using [GPUZ](https://www.techpowerup.com/download/gpu-z/). Dump the GPU BIOS. Outputs bios.rom
-- Using [AtomBIOSReeader]![image](https://github.com/oxonomi/Hackintosh/assets/130058100/23b2711a-7b3d-4f79-b222-cb7a15d4307c). Note the hexadecimal offset and length of PowerPlayTable. In my instance; Offset: cc90, length: 068a
+- Using [AtomBIOSReeader](https://github.com/kizwan/ATOMBIOSReader). Note the hexadecimal offset and length of PowerPlayTable. In my instance; Offset: cc90, length: 068a
 - Using [MorePowerTool](https://www.igorslab.de/en/download-area-new-version-of-morepowertool-mpt-and-final-release-of-redbioseditor-rbe/). Load bios.rom. Disable Zero RPM, adjust Stop temp 45, adjust Start temp 50. Output a MPPT file via Write SPPT
 - Using [Red BiosEditor](https://www.igorslab.de/en/download-area-new-version-of-morepowertool-mpt-and-final-release-of-redbioseditor-rbe/). Open bios.rom. Load the MPTT file. Save bios.rom (save a new, don’t override original bios.rom)
 - Using [HxD](https://mh-nexus.de/en/hxd/), hexadecimal editor. Navigate to the offset value from the ATOMBiosReader, cc90. Copy the data from here with the length, 068a
@@ -225,7 +224,7 @@ igYMAAHiAXMJAADxPAAAfQAIAAAAGwAAAAAAAAAAAAB2AAAAAAAAAAAAAAAAAAEAAAAKAAAA9AYAAPME
 
 
 ## Case RGB
-In my build I have a RGB lighting with a NZXT Kraken AIO. We can only control the lighting via GUI in Windows as theres no app for mac. To control in mac I use a CLI tool called [liquidctl](https://github.com/liquidctl/liquidctl). I then create a simple scripts which can be run easily from the Script menu in the menu-bar on macOS.
+In my build I have a RGB lighting with a NZXT Kraken AIO. We can only control the lighting via GUI in Windows as there's no app for mac. To control in mac I use a CLI tool called [liquidctl](https://github.com/liquidctl/liquidctl). I then created simple scripts which can be run easily from the Script menu in the menu-bar on macOS.
 
 example script 1 (static red):
 ```
