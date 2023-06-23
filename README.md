@@ -1,17 +1,16 @@
-# Hackintosh
+![image](https://github.com/oxonomi/Hackintosh/assets/130058100/346bffa7-3246-4455-8a37-4cbaa721a02e)# Hackintosh
 	
 
-'Hackintosh' a non-Apple computer modified to run macOS.
-
+'Hackintosh' a non-Apple computer modified to run macOS.  
 'OpenCore' a boot-loader to prepare the PC for macOS. A cleaner, more secure and more involved approach to building a hackintosh compared to configuration tools like Clover.
 
 Making an OpenCore Hackintosh is a very complex process, it requires time, patience and a passion for learning and tinkering.
-I will give you an overview of the process and the deatils of my confiuration but this is not a step-by-step guide. This should be only used for reference alongside the [OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/)
+I will give you an overview of the process and the details of my configuration but this is not a step-by-step guide. This should be only used for reference alongside the [OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/)
 
 ### Overview
-1. Using a boot-loader, we prepare our system for macOS by injecting new data for macOS, effectivly tricking macOS to believe it's running on apple hardware.
-2. Hardware compatiblity: Check if your PC components are compatible with macOS.
-3. Gathering and createing files to make custom EFI
+1. Using a boot-loader, we prepare our system for macOS by injecting new data for macOS, effectively tricking macOS to believe it's running on apple hardware.
+2. Hardware compatibility: Check if your PC components are compatible with macOS.
+3. Gathering and creating files to make custom EFI
   * OpenCore boot-loader
   * Firmware Drivers
   * Kexts
@@ -21,10 +20,10 @@ I will give you an overview of the process and the deatils of my confiuration bu
 5. Post install tuning and tweaking
 
 ## My System
-OpenCore:	0.9.1
-macOS: 	Ventura 13.3.1
-Windows:	10
-Linux:		Debian
+OpenCore:	0.9.1  
+macOS: 	Ventura 13.3.1  
+Windows:	10  
+Linux:		Debian  
 
 ## Hardware	
 - Mobo:		Gigabtye Z490m Gaming X
