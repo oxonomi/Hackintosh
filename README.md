@@ -1,5 +1,4 @@
-![image](https://github.com/oxonomi/Hackintosh/assets/130058100/346bffa7-3246-4455-8a37-4cbaa721a02e)# Hackintosh
-	
+# Hackintosh
 
 'Hackintosh' a non-Apple computer modified to run macOS.  
 'OpenCore' a boot-loader to prepare the PC for macOS. A cleaner, more secure and more involved approach to building a hackintosh compared to configuration tools like Clover.
