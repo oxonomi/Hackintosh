@@ -177,6 +177,7 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | key | value |
 | ----------------------- | ------------- | 
 | SystemProductName | iMac20,1 | 
+
 Note: all other platform info is redacted from the config.plst file. Create your own via GenSMBIOS
 
 
