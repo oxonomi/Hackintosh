@@ -7,7 +7,7 @@ Making an OpenCore Hackintosh is a very complex process, it requires time, patie
 I will give you an overview of the process and the details of my configuration but this is not a step-by-step guide. This should be only used for reference alongside the [OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/)
 
 ### Overview
-1. Using a boot-loader, we prepare our system for macOS by injecting new data for macOS, effectively tricking macOS to believe it's running on apple hardware.
+1. Using a boot-loader, we prepare our system for macOS by injecting new data, effectively tricking macOS to believe it's running on apple hardware.
 2. Hardware compatibility: Check if your PC components are compatible with macOS.
 3. Gathering and creating files to make custom EFI
   * OpenCore boot-loader
