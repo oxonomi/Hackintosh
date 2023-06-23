@@ -2,6 +2,7 @@
 	
 
 'Hackintosh' a non-Apple computer modified to run macOS.
+
 'OpenCore' a boot-loader to prepare the PC for macOS. A cleaner, more secure and more involved approach to building a hackintosh compared to configuration tools like Clover.
 
 Making an OpenCore Hackintosh is a very complex process, it requires time, patience and a passion for learning and tinkering.
