@@ -243,7 +243,7 @@ do shell script "/usr/local/bin/liquidctl --match kraken set logo color fixed 00
 
 ![alt text](https://github.com/oxonomi/Hackintosh/blob/main/images/Cinebench.png?raw=true)
 
-![alt text](https://github.com/oxonomi/Hackintosh/blob/main/images/Geekbench.png?raw=true)
+![alt text](https://github.com/oxonomi/Hackintosh/blob/main/images/Geekbench5.png?raw=true)
 ![alt text](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20OpenCL.png?raw=true)
 ![alt text](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20Metal.png?raw=true)
 
