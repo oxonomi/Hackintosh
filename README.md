@@ -239,8 +239,56 @@ do shell script "/usr/local/bin/liquidctl --match kraken set ring color fading f
 do shell script "/usr/local/bin/liquidctl --match kraken set logo color fixed 000000"
 ```
 
+
+## Overclock / Undervolt optimisation
+
+I have 4 bios profiles for different workloads.
+
+### General OC - non-AVX workloads: Coding, Browsing, Gaming
+Adaptive (no power/time limits)
+5Ghz core, 4.6Ghz uncore, -0.XXv, -300Mhz AVX offset
+CinebenchR23 = s: m:
+Geekbench = s: m:
+
+### AVX OC - AVX workloads:  Video Editing
+Adaptive (no power/time limits)
+4.8Ghz core, 4.6Ghz uncore, -0.XXv, -0 AVX offset
+CinebenchR23 = s: m:
+Geekbench = s: m:
+max V:
+max temp:
+
+### Fixed Max
+Fixed core
+4.9Ghz core, 4.6Ghz uncore, 1.33v, -100Mhz AVX offset
+CinebenchR23 = s: m:
+Geekbench = s: m:
+max V:
+max temp:
+
+### Undervolt
+Adaptive
+Stock frequencies, -0.1v
+CinebenchR23 = s: m:
+Geekbench = s: m:
+max V:
+max temp:
+
+### Stock
+Stock frequencies, -0.1v
+CinebenchR23 = s: m:
+Geekbench = s: m:
+max V:
+max temp:
+
+
+* Either i've either lost the silcon lottery and have a hot chip, or i need a new AIO (maybe because the v1 hack case design)  
+
+
+
 ## Benchmarks
 
+Max
 ![alt text](https://github.com/oxonomi/Hackintosh/blob/main/images/Cinebench.png?raw=true)
 
 ![alt text](https://github.com/oxonomi/Hackintosh/blob/main/images/GeekBench5.png?raw=true)
