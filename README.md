@@ -1,4 +1,4 @@
-# Hackintosh
+# Triple-boot Hackintosh
 
 'Hackintosh' a non-Apple computer modified to run macOS.  
 'OpenCore' a boot-loader to prepare the PC for macOS. A cleaner, more secure and more involved approach to building a hackintosh compared to configuration tools like Clover.
@@ -30,7 +30,7 @@ Linux:		Debian
 - GPU:		Sapphire RX 5600 XT
 - RAM:		Corsair Vengeance 2x16GB 3200
 - Wifi + BT:	Fenvi T919
-- Storage:	Crucial P1 1TB (macOS), Crucial MX500 1TB (Windows), Crucial MX500 1TB (Linux)
+- Storage:	Crucial P1 1TB (macOS), Crucial MX500 1TB (Windows), Sandisk Ultra Flair 128GB (Linux)
 
 ![alt text](https://github.com/oxonomi/Hackintosh/blob/main/images/info.png?raw=true)
 
