@@ -27,7 +27,7 @@ Linux:		Debian 12
 - RAM:		Corsair Vengeance 2x16GB 3200 <br />
 - Wifi + BT:	Fenvi T919 <br />
 - Storage:	Crucial P1 1TB (macOS), Crucial MX500 1TB (Windows), Sandisk Ultra Flair 128GB (Linux) <br />
-
+ <br />
 ![sys-info](https://github.com/oxonomi/Hackintosh/blob/main/images/info.png?raw=true)
 </details>
 
@@ -35,24 +35,24 @@ Linux:		Debian 12
 <details>
 <summary><strong>Tools</strong></summary>
 <br />
-- [MountEFI](https://github.com/corpnewt/MountEFI) - Tool to mount drives EFI partitions 
-- [MaciASL](https://github.com/acidanthera/MaciASL) - AML compiler
-- [gfxutil](https://github.com/acidanthera/gfxutil) - Device Properties tool 
-- [VDADecoderChecker](https://github.com/cylonbrain/VDADecoderCheck) – determine PlatformId and DeviceID
-- [CPUFriend](https://github.com/acidanthera/CPUFriend) - dynamic power management 
-- [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) - generate mac serials 
-- [gibMacOS](https://github.com/corpnewt/gibMacOS) - build recovery installer
-- [SSDTTime](https://github.com/corpnewt/SSDTTime) - create SSDTs 
-- [MountEFI](https://github.com/corpnewt/MountEFI) - mounting usb and drive efi
-- [USBMap](https://github.com/corpnewt/USBMap) - mapping ports 
-- [ProperTree](https://github.com/corpnewt/ProperTree) - GUI for plist + OC snapshot tool 
-- [IORegistry](https://github.com/vulgo/IORegistryExplorer)
-- [GPUZ](https://www.techpowerup.com/download/gpu-z/) - getting gpu bios.rom  
-- [AtomBIOSReeader](https://github.com/kizwan/ATOMBIOSReader) - reading PowerPlayTable data
-- [MorePowerTool](https://www.igorslab.de/en/download-area-new-version-of-morepowertool-mpt-and-final-release-of-redbioseditor-rbe/) - adjust gpu bios.rom 
-- [Red BiosEditor](https://www.igorslab.de/en/download-area-new-version-of-morepowertool-mpt-and-final-release-of-redbioseditor-rbe/)
-- [HxD](https://mh-nexus.de/en/hxd/) - read bios.rom as hex 
-- [liquidctl](https://github.com/liquidctl/liquidctl) - controlling RGB
+- [MountEFI](https://github.com/corpnewt/MountEFI) - Tool to mount drives EFI partitions  <br />
+- [MaciASL](https://github.com/acidanthera/MaciASL) - AML compiler  <br />
+- [gfxutil](https://github.com/acidanthera/gfxutil) - Device Properties tool  <br />
+- [VDADecoderChecker](https://github.com/cylonbrain/VDADecoderCheck) – determine PlatformId and DeviceID <br />
+- [CPUFriend](https://github.com/acidanthera/CPUFriend) - dynamic power management  <br />
+- [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) - generate mac serials  <br />
+- [gibMacOS](https://github.com/corpnewt/gibMacOS) - build recovery installer <br />
+- [SSDTTime](https://github.com/corpnewt/SSDTTime) - create SSDTs  <br />
+- [MountEFI](https://github.com/corpnewt/MountEFI) - mounting usb and drive efi <br />
+- [USBMap](https://github.com/corpnewt/USBMap) - mapping ports  <br />
+- [ProperTree](https://github.com/corpnewt/ProperTree) - GUI for plist + OC snapshot tool  <br />
+- [IORegistry](https://github.com/vulgo/IORegistryExplorer) <br />
+- [GPUZ](https://www.techpowerup.com/download/gpu-z/) - getting gpu bios.rom   <br />
+- [AtomBIOSReeader](https://github.com/kizwan/ATOMBIOSReader) - reading PowerPlayTable data <br />
+- [MorePowerTool](https://www.igorslab.de/en/download-area-new-version-of-morepowertool-mpt-and-final-release-of-redbioseditor-rbe/) - adjust gpu bios.rom  <br />
+- [Red BiosEditor](https://www.igorslab.de/en/download-area-new-version-of-morepowertool-mpt-and-final-release-of-redbioseditor-rbe/) <br />
+- [HxD](https://mh-nexus.de/en/hxd/) - read bios.rom as hex  <br />
+- [liquidctl](https://github.com/liquidctl/liquidctl) - controlling RGB <br />
 </details>
 
 
@@ -73,7 +73,7 @@ Linux:		Debian 12
 - SSDT-PLUG.aml		(Better CPU management)<br />
 - SSDT-AWAC.aml		(Legacy RTC clock)<br />
 - SSDT-EC.ami		(Embedded controller)<br />
-- SSDT-UIAC.aml		(USB. Switched to using kext*)<br />
+- SSDT-UIAC.aml		(USB. Switched to using kext*) <br />
 <br />
 All created manually via DSDT dump, decompiling, converting to SSDTS and compiling SSDTs	
 </details>
@@ -81,20 +81,18 @@ All created manually via DSDT dump, decompiling, converting to SSDTS and compili
 <details>
 <summary><strong>Kexts </strong></summary>
 <br />
-<pre>
-- AppleALC.kext				        (Audio)
-- CPUFriendDataProvider.kext  (CPU power management and performance tuning)
-- IntelMausi.kext			        (Ethernet)
-- Lilu.kext				            (OpenCore, allows kexts to patch)
-- NVMeFix.kext				        (Support for non-Apple NVMe drives)
-- RadeonSensor.kext			      (Reading GPU temps)
-- SMCProcessor.kext			      (CPU temps and power)
-- SMCRadeonGPU.kext			      (GPU sensor output)
-- SMCSuperIO.kext			        (hardware monitoring)
-- USBPorts.kext				        (define USB ports. Replaces SSDT-UIAC)
-- VirtualSMC.kext			        (Emulates the System Management Controller)
-- WhateverGreen.kext			    (OpenCore, graphic patching)
-</pre>
+- AppleALC.kext				        (Audio) <br />
+- CPUFriendDataProvider.kext  (CPU power management and performance tuning) <br />
+- IntelMausi.kext			        (Ethernet) <br />
+- Lilu.kext				            (OpenCore, allows kexts to patch) <br />
+- NVMeFix.kext				        (Support for non-Apple NVMe drives) <br />
+- RadeonSensor.kext			      (Reading GPU temps) <br />
+- SMCProcessor.kext			      (CPU temps and power) <br />
+- SMCRadeonGPU.kext			      (GPU sensor output) <br />
+- SMCSuperIO.kext			        (hardware monitoring) <br />
+- USBPorts.kext				        (define USB ports. Replaces SSDT-UIAC) <br />
+- VirtualSMC.kext			        (Emulates the System Management Controller) <br />
+- WhateverGreen.kext			    (OpenCore, graphic patching) <br />
 </details>
 
 
@@ -106,7 +104,6 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 <details>
 <summary><strong>MmioWhitelist > Quirks</strong></summary>
 <br />
-<pre>
 | key | value |
 | ----------------------- | ------------- | 
 | AvoidRuntimeDefrag:  |  true |
@@ -119,7 +116,6 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | ResizeAppleGpuBars: |  -1 |
 | SetupVirtualMap:  | false |
 | SyncRuntimePermissions: |  true |
-</pre>
 </details>
 
 ### MmioWhitelist > Quirks
@@ -137,7 +133,21 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | SetupVirtualMap:  | false |
 | SyncRuntimePermissions: |  true |
 
-
+<details>
+<summary><strong>DeviceProperties > Add</strong></summary>
+<br />
+| key | value |
+| ----------------------- | ------------- | 
+| PciRoot(0x0)/Pci(0x2,0x0) (for headless iGPU)| |
+| AAPL,ig-platform-id | AwDFmw== (base64), 0300C89B (hex)|
+| device-id | xZsAAA== (base64), c59b0000 (hex) |
+| PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0) | |
+| Shikigva (for Rx 5600) | 80 |
+| PP_PhmSoftPowerPlayTable (for fan control) | [SEE RX 5600 XT fan Control section for data value](#fan-control) |
+| PciRoot(0x0)/Pci(0x1F,0x3) (for audio) | | 
+| layout-id | AQAAAA== (base64), 1 (dec) | 
+| No-hda-gfx | AAAAAA== (base64),  0 (dec)| 
+</details>
 
 <a id="fan-control-config"></a>
 ### DeviceProperties > Add
