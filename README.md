@@ -17,6 +17,7 @@ Here's an overview of my configuration but this is not a step-by-step guide. Thi
 - macOS: 	Ventura 13.3.1  <br />
 - Windows:	10  <br />
 - Linux:		Debian 12
+<br />
 </details>
 
 <details>
@@ -30,14 +31,17 @@ Here's an overview of my configuration but this is not a step-by-step guide. Thi
 - Wifi + BT:	Fenvi T919 <br />
 - Storage:	Crucial P1 1TB (macOS), Crucial MX500 1TB (Windows), Sandisk Ultra Flair 128GB (Linux) <br />
  <br />
+
 ![sys-info](https://github.com/oxonomi/Hackintosh/blob/main/images/info.png?raw=true)
+
+<br />
 </details>
 
 
 <details>
 <summary><strong>Tools</strong></summary>
- 
 <br />
+ 
 - [MountEFI](https://github.com/corpnewt/MountEFI) - Tool to mount drives EFI partitions  <br />
 - [MaciASL](https://github.com/acidanthera/MaciASL) - AML compiler  <br />
 - [gfxutil](https://github.com/acidanthera/gfxutil) - Device Properties tool  <br />
@@ -56,24 +60,30 @@ Here's an overview of my configuration but this is not a step-by-step guide. Thi
 - [Red BiosEditor](https://www.igorslab.de/en/download-area-new-version-of-morepowertool-mpt-and-final-release-of-redbioseditor-rbe/) <br />
 - [HxD](https://mh-nexus.de/en/hxd/) - read bios.rom as hex  <br />
 - [liquidctl](https://github.com/liquidctl/liquidctl) - controlling RGB <br />
+
+<br />
 </details>
 
+<br />
+<br />
 
 ## EFI files
 
 <details>
 <summary><strong>Drivers</strong></summary>
- 
 <br />
+ 
 - HfsPlus.efi			(HFS file system driver)
 - OpenCanopy.efi		(OpenCore plugin bootloader GUI)
 - OpenRuntime.efi		(OpenCore plugin OC_FIRMWARE_RUNTIME protocol)
+
+<br />
 </details>
 
 <details>
 <summary><strong>ACPI </strong></summary>
- 
 <br />
+ 
 - SSDT-SBUS-MCHC.aml	(System Management Bus
 - SSDT-PLUG.aml		(Better CPU management)
 - SSDT-AWAC.aml		(Legacy RTC clock)
@@ -81,12 +91,14 @@ Here's an overview of my configuration but this is not a step-by-step guide. Thi
 - SSDT-UIAC.aml		(USB. Switched to using kext*)
 <br />
 All created manually via DSDT dump, decompiling, converting to SSDTS and compiling SSDTs	
+
+<br />
 </details>
 
 <details>
 <summary><strong>Kexts </strong></summary>
- 
 <br />
+ 
 - AppleALC.kext				        (Audio) <br />
 - CPUFriendDataProvider.kext  (CPU power management and performance tuning) <br />
 - IntelMausi.kext			        (Ethernet) <br />
@@ -99,9 +111,12 @@ All created manually via DSDT dump, decompiling, converting to SSDTS and compili
 - USBPorts.kext				        (define USB ports. Replaces SSDT-UIAC) <br />
 - VirtualSMC.kext			        (Emulates the System Management Controller) <br />
 - WhateverGreen.kext			    (OpenCore, graphic patching) <br />
+
+<br />
 </details>
 
-
+<br />
+<br />
 
 ## Config.plist
 Follow the OpenCore guide to determine which properties to enable and disable for your build. Use ProperTree to do an OC snapshot to populate based of your OC files.
@@ -123,6 +138,8 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | ResizeAppleGpuBars: |  -1 |
 | SetupVirtualMap:  | false |
 | SyncRuntimePermissions: |  true |
+
+<br />
 </details>
 
 <a id="fan-control-config"></a>
@@ -141,6 +158,8 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | PciRoot(0x0)/Pci(0x1F,0x3) (for audio) | | 
 | layout-id | AQAAAA== (base64), 1 (dec) | 
 | No-hda-gfx | AAAAAA== (base64),  0 (dec)| 
+
+<br />
 </details>
 
 
@@ -163,6 +182,8 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | PowerTimeoutKernelPanic:|  true |
 | SetApfsTrimTimeout: | -1 |
 | XhciPortLimit: | false | 
+
+<br />
 </details>
 
 
@@ -173,6 +194,8 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | key | value |
 | ----------------------- | ------------- | 
 | HideAuxiliary:|  true| 
+
+<br />
 </details>
 
 
@@ -186,6 +209,8 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | ApplePanic:|  true| 
 | DisableWatchDog:|  true| 
 | Target:|  83| 
+
+<br />
 </details>
 
 
@@ -202,6 +227,8 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | ScanPolicy:|  0	| 
 | SecureBootModel:|  Default	| 
 | Vault:|  Optional| 
+
+<br />
 </details>
 
 
@@ -216,6 +243,8 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | DefaultBackgroundColor| AAAAAA== (base65), 000000(hex), Black| 
 | 7C436110-AB2A-4BBB-A880-FE41995C9F82| | 
 | boot-args | keepsyms=1 debug=0x100 agdpmod=pikera -wegdbg -liludbg -radnoaudio gfxrst=4| 
+
+<br />
 </details>
 
 
@@ -228,6 +257,8 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | SystemProductName | iMac20,1 | 
 
 Note: all other platform info is redacted from the config.plst file. Create your own via GenSMBIOS
+
+<br />
 </details>
 
 
@@ -255,17 +286,24 @@ Note: all other platform info is redacted from the config.plst file. Create your
 | DVMT Pre-Allocated	 |    64MB |
 | SATA Mode 		      |     AHCI |
 | XMP               	| 		Profile 1 |
+
+<br />
 </details>
 
 
 
-
-
-<a id="fan-control"></a>
-## RX 5600 XT fan Control
-
 <details>
-<summary><strong>BIOS</strong></summary>
+<summary><strong>OpenCanopy</strong></summary>
+<br />
+</details>
+
+<br />
+<br />
+
+## Extras
+<a id="fan-control"></a>
+<details>
+<summary><strong>RX 5600 XT fan Control</strong></summary>
 <br />
  
 By default the Graphics card fan only turns on when temp exceeds 60 degrees, theh turns off again when down to 50 degrees, this is too low for my liking.
@@ -283,10 +321,12 @@ igYMAAHiAXMJAADxPAAAfQAIAAAAGwAAAAAAAAAAAAB2AAAAAAAAAAAAAAAAAAEAAAAKAAAA9AYAAPME
 - WARNING: do not just copy and paste my data, even if you have the same card. THIS COULD IRREVERSIBLE BRICK YOUR CARD.
 - Insert your PowerPlatTable data into the DeviceProperties [PP_PhmSoftPowerPlayTable](#fan-control-config) in the config.plist
 - With the Radeon kexts, you can now monitor your fans behaviour and observe the alterations you made.
+
+<br />
 </details>
 
 
-
+<br />
 
 
 
@@ -313,7 +353,7 @@ With the same tool I set my CPU AIO pump speed paramaters:
 ```
 do shell script "/usr/local/bin/liquidctl --match kraken set pump speed 20 20 30 30 31 40 32 43 33 46 35 50 36 60 38 70 40 80 45 90 50 100"
 ```
-
+<br />
 </details>
 
 
@@ -321,61 +361,63 @@ do shell script "/usr/local/bin/liquidctl --match kraken set pump speed 20 20 30
 <details>
 <summary><strong>Overclock / Undervolt optimisation/strong></summary>
 <br />
- 
-I have 4 bios profiles for different workloads.
+ *info to be added*<br />
+I have 4 bios profiles for different workloads.<br />
+<br />
+__General OC - non-AVX workloads: Coding, Browsing, Gaming__ <br />
+Adaptive (no power/time limits) <br />
+5Ghz core, 4.6Ghz uncore, -0.XXv, -300Mhz AVX offset <br />
+CinebenchR23 = s: m: <br />
+Geekbench = s: m: <br />
+<br />
+__AVX OC - AVX workloads:  Video Editing__ <br />
+Adaptive (no power/time limits) <br />
+4.8Ghz core, 4.6Ghz uncore, -0.XXv, -0 AVX offset <br />
+CinebenchR23 = s: m: <br />
+Geekbench = s: m: <br />
+max V: <br />
+max temp: <br />
+<br />
+__Fixed Max__ <br />
+Fixed core <br />
+4.9Ghz core, 4.6Ghz uncore, 1.33v, -100Mhz AVX offset <br />
+CinebenchR23 = s: m: <br />
+Geekbench = s: m: <br />
+max V: <br />
+max temp: <br />
+<br />
+__Undervolt__<br />
+Adaptive <br />
+Stock frequencies, -0.1v <br />
+CinebenchR23 = s: m: <br />
+Geekbench = s: m: <br />
+max V: <br />
+max temp: <br />
+<br />
+__Stock__<br />
+Stock frequencies, -0.1v <br />
+CinebenchR23 = s: m: <br />
+Geekbench = s: m: <br />
+max V: <br />
+max temp: <br />
 
-### General OC - non-AVX workloads: Coding, Browsing, Gaming
-Adaptive (no power/time limits)
-5Ghz core, 4.6Ghz uncore, -0.XXv, -300Mhz AVX offset
-CinebenchR23 = s: m:
-Geekbench = s: m:
-
-### AVX OC - AVX workloads:  Video Editing
-Adaptive (no power/time limits)
-4.8Ghz core, 4.6Ghz uncore, -0.XXv, -0 AVX offset
-CinebenchR23 = s: m:
-Geekbench = s: m:
-max V:
-max temp:
-
-### Fixed Max
-Fixed core
-4.9Ghz core, 4.6Ghz uncore, 1.33v, -100Mhz AVX offset
-CinebenchR23 = s: m:
-Geekbench = s: m:
-max V:
-max temp:
-
-### Undervolt
-Adaptive
-Stock frequencies, -0.1v
-CinebenchR23 = s: m:
-Geekbench = s: m:
-max V:
-max temp:
-
-### Stock
-Stock frequencies, -0.1v
-CinebenchR23 = s: m:
-Geekbench = s: m:
-max V:
-max temp:
-
+<br />
 
 * Either i've either lost the silcon lottery and have a hot chip, or i need a new AIO (maybe because the v1 hack case design)  
+<br />
 </details>
 
-
+<br />
 <details>
 <summary><strong>Benchmarks</strong></summary>
 <br />
  
-Max
+Max<br />
 ![Cinebench](https://github.com/oxonomi/Hackintosh/blob/main/images/Cinebench.png?raw=true)
 
 ![Geekbench5](https://github.com/oxonomi/Hackintosh/blob/main/images/GeekBench5.png?raw=true)
 ![Geenbench-opencl](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20OpenCL.png?raw=true)
 ![Geekbench-metal](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20Metal.png?raw=true)
-
+<br />
 </details>
 
