@@ -21,6 +21,7 @@ Linux:		Debian 12
 <details>
 <summary><strong>Hardware</strong></summary>
 <br />
+ 
 - Mobo:		Gigabtye Z490m Gaming X <br />
 - CPU:		Intel i5-10600K <br />
 - GPU:		Sapphire RX 5600 XT <br />
@@ -34,6 +35,7 @@ Linux:		Debian 12
 
 <details>
 <summary><strong>Tools</strong></summary>
+ 
 <br />
 - [MountEFI](https://github.com/corpnewt/MountEFI) - Tool to mount drives EFI partitions  <br />
 - [MaciASL](https://github.com/acidanthera/MaciASL) - AML compiler  <br />
@@ -60,6 +62,7 @@ Linux:		Debian 12
 
 <details>
 <summary><strong>Drivers</strong></summary>
+ 
 <br />
 - HfsPlus.efi			(HFS file system driver)<br />
 - OpenCanopy.efi		(OpenCore plugin bootloader GUI)<br />
@@ -68,6 +71,7 @@ Linux:		Debian 12
 
 <details>
 <summary><strong>ACPI </strong></summary>
+ 
 <br />
 - SSDT-SBUS-MCHC.aml	(System Management Bus)<br />
 - SSDT-PLUG.aml		(Better CPU management)<br />
@@ -80,6 +84,7 @@ All created manually via DSDT dump, decompiling, converting to SSDTS and compili
 
 <details>
 <summary><strong>Kexts </strong></summary>
+ 
 <br />
 - AppleALC.kext				        (Audio) <br />
 - CPUFriendDataProvider.kext  (CPU power management and performance tuning) <br />
@@ -104,6 +109,7 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 <details>
 <summary><strong>MmioWhitelist > Quirks</strong></summary>
 <br />
+ 
 | key | value |
 | ----------------------- | ------------- | 
 | AvoidRuntimeDefrag:  |  true |
@@ -136,6 +142,7 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 <details>
 <summary><strong>DeviceProperties > Add</strong></summary>
 <br />
+ 
 | key | value |
 | ----------------------- | ------------- | 
 | PciRoot(0x0)/Pci(0x2,0x0) (for headless iGPU)| |
