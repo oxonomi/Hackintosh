@@ -8,7 +8,7 @@ Making an OpenCore Hackintosh is a very complex process, it requires time, patie
 Here's an overview of my configuration but this is not a step-by-step guide. This should be only used for reference alongside the [OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/)
 
 <details open>
-<summary>My System</summary>
+<summary>## My System</summary>
 <br>
 OpenCore:	0.9.1  
 macOS: 	Ventura 13.3.1  
