@@ -83,18 +83,20 @@ All created manually via DSDT dump, decompiling, converting to SSDTS and compili
 <details>
 <summary><strong>Kexts </strong></summary>
 <br />
-- AppleALC.kext				        (Audio)<br />
-- CPUFriendDataProvider.kext  (CPU power management and performance tuning)<br />
-- IntelMausi.kext			        (Ethernet)<br />
-- Lilu.kext				            (OpenCore, allows kexts to patch)<br />
-- NVMeFix.kext				        (Support for non-Apple NVMe drives)<br />
-- RadeonSensor.kext			      (Reading GPU temps)<br />
-- SMCProcessor.kext			      (CPU temps and power)<br />
-- SMCRadeonGPU.kext			      (GPU sensor output)<br />
-- SMCSuperIO.kext			        (hardware monitoring)<br />
-- USBPorts.kext				        (define USB ports. Replaces SSDT-UIAC)<br />
-- VirtualSMC.kext			        (Emulates the System Management Controller)<br />
-- WhateverGreen.kext			    (OpenCore, graphic patching)<br />
+<pre>
+- AppleALC.kext				        (Audio)
+- CPUFriendDataProvider.kext  (CPU power management and performance tuning)
+- IntelMausi.kext			        (Ethernet)
+- Lilu.kext				            (OpenCore, allows kexts to patch)
+- NVMeFix.kext				        (Support for non-Apple NVMe drives)
+- RadeonSensor.kext			      (Reading GPU temps)
+- SMCProcessor.kext			      (CPU temps and power)
+- SMCRadeonGPU.kext			      (GPU sensor output)
+- SMCSuperIO.kext			        (hardware monitoring)
+- USBPorts.kext				        (define USB ports. Replaces SSDT-UIAC)
+- VirtualSMC.kext			        (Emulates the System Management Controller)
+- WhateverGreen.kext			    (OpenCore, graphic patching)
+</pre>
 </details>
 
 
@@ -102,15 +104,11 @@ All created manually via DSDT dump, decompiling, converting to SSDTS and compili
 ## Config.plist
 Follow the OpenCore guide to determine which properties to enable and disable for your build. Use ProperTree to do an OC snapshot to populate based of your OC files.
 
-<details>
-<summary><strong>Kexts </strong></summary>
-<br />
-
-</details>
 
 <details>
 <summary><strong>MmioWhitelist > Quirks</strong></summary>
 <br />
+<pre>
 | key | value |
 | ----------------------- | ------------- | 
 | AvoidRuntimeDefrag:  |  true |
@@ -123,6 +121,7 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | ResizeAppleGpuBars: |  -1 |
 | SetupVirtualMap:  | false |
 | SyncRuntimePermissions: |  true |
+</pre>
 </details>
 
 ### MmioWhitelist > Quirks
