@@ -409,10 +409,11 @@ max temp: <br />
 <summary><strong>Benchmarks</strong></summary>
 <br />
  
-Max<br />
-![Cinebench](https://github.com/oxonomi/Hackintosh/blob/main/images/Cinebench.png?raw=true)
-
-![Geekbench5](https://github.com/oxonomi/Hackintosh/blob/main/images/GeekBench5.png?raw=true)
+Max OC<br />
+![Cinebench](https://github.com/oxonomi/Hackintosh/blob/main/images/Cinebench-OC.png?raw=true)
+<br />
+![Geekbench5](https://github.com/oxonomi/Hackintosh/blob/main/images/GeekBench5-OC.png?raw=true)
+<br />
 ![Geenbench-opencl](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20OpenCL.png?raw=true)
 ![Geekbench-metal](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20Metal.png?raw=true)
 <br />
