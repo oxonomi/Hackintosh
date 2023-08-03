@@ -1,4 +1,5 @@
 # Triple-boot Hackintosh
+![bootloader-screenshot](https://github.com/oxonomi/Hackintosh/blob/main/images/OpenCanopy-bootloader.jpg?raw=true)
 
 'Hackintosh' a non-Apple computer modified to run macOS.  
 'OpenCore' a boot-loader to prepare the PC for macOS. A cleaner, more secure and more involved approach to building a hackintosh compared to configuration tools like Clover.
@@ -32,7 +33,7 @@ Linux:		Debian
 - Wifi + BT:	Fenvi T919
 - Storage:	Crucial P1 1TB (macOS), Crucial MX500 1TB (Windows), Sandisk Ultra Flair 128GB (Linux)
 
-![alt text](https://github.com/oxonomi/Hackintosh/blob/main/images/info.png?raw=true)
+![sys-info](https://github.com/oxonomi/Hackintosh/blob/main/images/info.png?raw=true)
 
 
 ## Tools
@@ -289,10 +290,10 @@ max temp:
 ## Benchmarks
 
 Max
-![alt text](https://github.com/oxonomi/Hackintosh/blob/main/images/Cinebench.png?raw=true)
+![Cinebench](https://github.com/oxonomi/Hackintosh/blob/main/images/Cinebench.png?raw=true)
 
-![alt text](https://github.com/oxonomi/Hackintosh/blob/main/images/GeekBench5.png?raw=true)
-![alt text](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20OpenCL.png?raw=true)
-![alt text](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20Metal.png?raw=true)
+![Geekbench5](https://github.com/oxonomi/Hackintosh/blob/main/images/GeekBench5.png?raw=true)
+![Geenbench-opencl](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20OpenCL.png?raw=true)
+![Geekbench-metal](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20Metal.png?raw=true)
 
 
