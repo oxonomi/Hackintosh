@@ -12,10 +12,11 @@ Here's an overview of my configuration but this is not a step-by-step guide. Thi
 <details open>
 <summary><strong>My System</strong></summary>
 <br />
-OpenCore:	0.9.1  <br />
-macOS: 	Ventura 13.3.1  <br />
-Windows:	10  <br />
-Linux:		Debian 12
+
+- OpenCore:	0.9.1  <br />
+- macOS: 	Ventura 13.3.1  <br />
+- Windows:	10  <br />
+- Linux:		Debian 12
 </details>
 
 <details>
@@ -64,8 +65,8 @@ Linux:		Debian 12
 <summary><strong>Drivers</strong></summary>
  
 <br />
-- HfsPlus.efi			(HFS file system driver)<br />
-- OpenCanopy.efi		(OpenCore plugin bootloader GUI)<br />
+- HfsPlus.efi			(HFS file system driver)
+- OpenCanopy.efi		(OpenCore plugin bootloader GUI)
 - OpenRuntime.efi		(OpenCore plugin OC_FIRMWARE_RUNTIME protocol)
 </details>
 
@@ -73,11 +74,11 @@ Linux:		Debian 12
 <summary><strong>ACPI </strong></summary>
  
 <br />
-- SSDT-SBUS-MCHC.aml	(System Management Bus)<br />
-- SSDT-PLUG.aml		(Better CPU management)<br />
-- SSDT-AWAC.aml		(Legacy RTC clock)<br />
-- SSDT-EC.ami		(Embedded controller)<br />
-- SSDT-UIAC.aml		(USB. Switched to using kext*) <br />
+- SSDT-SBUS-MCHC.aml	(System Management Bus
+- SSDT-PLUG.aml		(Better CPU management)
+- SSDT-AWAC.aml		(Legacy RTC clock)
+- SSDT-EC.ami		(Embedded controller)
+- SSDT-UIAC.aml		(USB. Switched to using kext*)
 <br />
 All created manually via DSDT dump, decompiling, converting to SSDTS and compiling SSDTs	
 </details>
@@ -124,21 +125,7 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | SyncRuntimePermissions: |  true |
 </details>
 
-### MmioWhitelist > Quirks
-
-| key | value |
-| ----------------------- | ------------- | 
-| AvoidRuntimeDefrag:  |  true |
-| DevirtualiseMmio:  | true |
-| EnableSafeModeSlide:  | true |
-| EnableWriteUnprotector:  | false |
-| ProtectUefiServices:  | true |
-| ProvideCustomSlide:  | true |
-| RebuildAppleMemoryMap:  | true |
-| ResizeAppleGpuBars: |  -1 |
-| SetupVirtualMap:  | false |
-| SyncRuntimePermissions: |  true |
-
+<a id="fan-control-config"></a>
 <details>
 <summary><strong>DeviceProperties > Add</strong></summary>
 <br />
@@ -156,23 +143,11 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | No-hda-gfx | AAAAAA== (base64),  0 (dec)| 
 </details>
 
-<a id="fan-control-config"></a>
-### DeviceProperties > Add
-| key | value |
-| ----------------------- | ------------- | 
-| PciRoot(0x0)/Pci(0x2,0x0) (for headless iGPU)| |
-| AAPL,ig-platform-id | AwDFmw== (base64), 0300C89B (hex)|
-| device-id | xZsAAA== (base64), c59b0000 (hex) |
-| PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0) | |
-| Shikigva (for Rx 5600) | 80 |
-| PP_PhmSoftPowerPlayTable (for fan control) | [SEE RX 5600 XT fan Control section for data value](#fan-control) |
-| PciRoot(0x0)/Pci(0x1F,0x3) (for audio) | | 
-| layout-id | AQAAAA== (base64), 1 (dec) | 
-| No-hda-gfx | AAAAAA== (base64),  0 (dec)| 
 
-
-
-### Kernel > Quirks
+<details>
+<summary><strong>Kernel > Quirks</strong></summary>
+<br />
+ 
 | key | value |
 | ----------------------- | ------------- | 
 | AppleCpuPmCfgLock: |  false |
@@ -188,21 +163,38 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | PowerTimeoutKernelPanic:|  true |
 | SetApfsTrimTimeout: | -1 |
 | XhciPortLimit: | false | 
+</details>
 
-### Misc > Boot
+
+<details>
+<summary><strong>Misc > Boot</strong></summary>
+<br />
+ 
 | key | value |
 | ----------------------- | ------------- | 
 | HideAuxiliary:|  true| 
+</details>
 
-### Misc > Quirks
+
+<details>
+<summary><strong>Misc > Quirks</strong></summary>
+<br />
+ 
 | key | value |
 | ----------------------- | ------------- | 
 | AppleDebug:|  true| 
 | ApplePanic:|  true| 
 | DisableWatchDog:|  true| 
 | Target:|  83| 
+</details>
 
-### Misc > Security
+
+
+
+<details>
+<summary><strong>Misc > Security</strong></summary>
+<br />
+ 
 | key | value |
 | ----------------------- | ------------- | 
 | AllowSetDefault: | true	| 
@@ -210,28 +202,40 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 | ScanPolicy:|  0	| 
 | SecureBootModel:|  Default	| 
 | Vault:|  Optional| 
+</details>
 
 
 
-### NVRAM > ADD
+<details>
+<summary><strong>NVRAM > Add</strong></summary>
+<br />
+ 
 | key | value |
 | ----------------------- | ------------- | 
 | 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14 (Bootloader background)| | 
 | DefaultBackgroundColor| AAAAAA== (base65), 000000(hex), Black| 
 | 7C436110-AB2A-4BBB-A880-FE41995C9F82| | 
 | boot-args | keepsyms=1 debug=0x100 agdpmod=pikera -wegdbg -liludbg -radnoaudio gfxrst=4| 
+</details>
 
 
-### PlatformInfo > Generic
+<details>
+<summary><strong>PlatformInfo > Generic</strong></summary>
+<br />
+ 
 | key | value |
 | ----------------------- | ------------- | 
 | SystemProductName | iMac20,1 | 
 
 Note: all other platform info is redacted from the config.plst file. Create your own via GenSMBIOS
-
+</details>
 
 
 ## BIOS Settings
+<details>
+<summary><strong>BIOS</strong></summary>
+<br />
+ 
 | key | value |
 | -------------------- |-------------|
 | Fast Boot |			          Disable |
@@ -251,11 +255,19 @@ Note: all other platform info is redacted from the config.plst file. Create your
 | DVMT Pre-Allocated	 |    64MB |
 | SATA Mode 		      |     AHCI |
 | XMP               	| 		Profile 1 |
+</details>
+
+
+
 
 
 <a id="fan-control"></a>
 ## RX 5600 XT fan Control
 
+<details>
+<summary><strong>BIOS</strong></summary>
+<br />
+ 
 By default the Graphics card fan only turns on when temp exceeds 60 degrees, theh turns off again when down to 50 degrees, this is too low for my liking.
 To do this we inject new GPU PowerPlayTable data via config.plist. To create this data we need to boot into Windows to dump the current GPU bios to find the current PowerPlayTable data location, create a new bios with our alterations, find the new PowerPlayTable data, copy that into our config.plist.
 
@@ -271,10 +283,19 @@ igYMAAHiAXMJAADxPAAAfQAIAAAAGwAAAAAAAAAAAAB2AAAAAAAAAAAAAAAAAAEAAAAKAAAA9AYAAPME
 - WARNING: do not just copy and paste my data, even if you have the same card. THIS COULD IRREVERSIBLE BRICK YOUR CARD.
 - Insert your PowerPlatTable data into the DeviceProperties [PP_PhmSoftPowerPlayTable](#fan-control-config) in the config.plist
 - With the Radeon kexts, you can now monitor your fans behaviour and observe the alterations you made.
+</details>
 
 
-## Case RGB
-In my build I have a RGB lighting with a NZXT Kraken AIO. We can only control the lighting via GUI in Windows as there's no app for mac. To control in mac I use a CLI tool called [liquidctl](https://github.com/liquidctl/liquidctl). I then created simple scripts which can be run easily from the Script menu in the menu-bar on macOS.
+
+
+
+
+
+<details>
+<summary><strong>Case RGB and AIO pump speed</strong></summary>
+<br />
+ 
+In my build I have a RGB lighting with a NZXT Kraken AIO. We can only control the lighting via GUI in Windows as there's no app for mac. To control in mac I use a CLI tool called [liquidctl](https://github.com/liquidctl/liquidctl). I then created simple AppleScripts to run the Shell scripts at loggin / Script menu in the menu-bar.
 
 example script 1 (static red):
 ```
@@ -288,9 +309,19 @@ do shell script "/usr/local/bin/liquidctl --match kraken set ring color fading f
 do shell script "/usr/local/bin/liquidctl --match kraken set logo color fixed 000000"
 ```
 
+With the same tool I set my CPU AIO pump speed paramaters:
+```
+do shell script "/usr/local/bin/liquidctl --match kraken set pump speed 20 20 30 30 31 40 32 43 33 46 35 50 36 60 38 70 40 80 45 90 50 100"
+```
 
-## Overclock / Undervolt optimisation
+</details>
 
+
+
+<details>
+<summary><strong>Overclock / Undervolt optimisation/strong></summary>
+<br />
+ 
 I have 4 bios profiles for different workloads.
 
 ### General OC - non-AVX workloads: Coding, Browsing, Gaming
@@ -332,11 +363,13 @@ max temp:
 
 
 * Either i've either lost the silcon lottery and have a hot chip, or i need a new AIO (maybe because the v1 hack case design)  
+</details>
 
 
-
-## Benchmarks
-
+<details>
+<summary><strong>Benchmarks</strong></summary>
+<br />
+ 
 Max
 ![Cinebench](https://github.com/oxonomi/Hackintosh/blob/main/images/Cinebench.png?raw=true)
 
@@ -344,4 +377,5 @@ Max
 ![Geenbench-opencl](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20OpenCL.png?raw=true)
 ![Geekbench-metal](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20Metal.png?raw=true)
 
+</details>
 
