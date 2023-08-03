@@ -1,33 +1,26 @@
 # Triple-boot Hackintosh
 ![bootloader-screenshot](https://github.com/oxonomi/Hackintosh/blob/main/images/OpenCanopy-bootloader.jpg?raw=true)
 
-'Hackintosh' a non-Apple computer modified to run macOS.  
-'OpenCore' a boot-loader to prepare the PC for macOS. A cleaner, more secure and more involved approach to building a hackintosh compared to configuration tools like Clover.
+'Hackintosh' a non-Apple computer running macOS. 
+'OpenCore' a custom configured boot-loader which injects data into macOS when booting, effectively tricking macOS to believe it's running on apple hardware. A cleaner, more secure and more involved approach to building a hackintosh compared to tools like Clover or Virtual Machines.
 
 Making an OpenCore Hackintosh is a very complex process, it requires time, patience and a passion for learning and tinkering.
-I will give you an overview of the process and the details of my configuration but this is not a step-by-step guide. This should be only used for reference alongside the [OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/)
+Here's an overview of my configuration but this is not a step-by-step guide. This should be only used for reference alongside the [OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/)
 
-### Overview
-1. Using a boot-loader, we prepare our system for macOS by injecting new data, effectively tricking macOS to believe it's running on apple hardware.
-2. Hardware compatibility: Check if your PC components are compatible with macOS.
-3. Gathering and creating files to make custom EFI
-  * OpenCore boot-loader
-  * Firmware Drivers
-  * Kexts
-  * ACPI tables
-  * config.plist
-4. Create a USB installer with macOS and custom EFI files; install OS, boot, tranfaser EFI to drive.
-5. Post install tuning and tweaking
-
-## My System
+<details open>
+<summary>My System</summary>
+<br>
 OpenCore:	0.9.1  
 macOS: 	Ventura 13.3.1  
 Windows:	10  
-Linux:		Debian  
+Linux:		Debian 12
+</details>
+
+
 
 ## Hardware	
 - Mobo:		Gigabtye Z490m Gaming X
-- CPU:		Intel i5-10600k
+- CPU:		Intel i5-10600K
 - GPU:		Sapphire RX 5600 XT
 - RAM:		Corsair Vengeance 2x16GB 3200
 - Wifi + BT:	Fenvi T919
@@ -37,7 +30,7 @@ Linux:		Debian
 
 
 ## Tools
-- [MountEFI](https://github.com/corpnewt/MountEFI)
+- [MountEFI](https://github.com/corpnewt/MountEFI) - Tool to mount drives EFI partitions
 - [MaciASL](https://github.com/acidanthera/MaciASL) - AML compiler
 - [gfxutil](https://github.com/acidanthera/gfxutil) - Device Properties tool 
 - [VDADecoderChecker](https://github.com/cylonbrain/VDADecoderCheck) – determine PlatformId and DeviceID
