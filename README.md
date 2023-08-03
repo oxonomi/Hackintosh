@@ -17,7 +17,7 @@ Here's an overview of my configuration but this is not a step-by-step guide. Thi
 - macOS: 	Ventura 13.3.1  <br />
 - Windows:	10  <br />
 - Linux:		Debian 12
-<br />
+
 </details>
 
 <details>
@@ -115,7 +115,6 @@ All created manually via DSDT dump, decompiling, converting to SSDTS and compili
 <br />
 </details>
 
-<br />
 <br />
 
 ## Config.plist
@@ -298,7 +297,6 @@ Note: all other platform info is redacted from the config.plst file. Create your
 </details>
 
 <br />
-<br />
 
 ## Extras
 <a id="fan-control"></a>
@@ -359,7 +357,7 @@ do shell script "/usr/local/bin/liquidctl --match kraken set pump speed 20 20 30
 
 
 <details>
-<summary><strong>Overclock / Undervolt optimisation/strong></summary>
+<summary><strong>Overclock / Undervolt optimisation</strong></summary>
 <br />
  *info to be added*<br />
 I have 4 bios profiles for different workloads.<br />
