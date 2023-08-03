@@ -91,7 +91,7 @@ Here's an overview of my configuration but this is not a step-by-step guide. Thi
 - SSDT-UIAC.aml		(USB. Switched to using kext*)
 <br />
 All created manually via DSDT dump, decompiling, converting to SSDTS and compiling SSDTs	
-
+<br />
 <br />
 </details>
 
@@ -112,7 +112,6 @@ All created manually via DSDT dump, decompiling, converting to SSDTS and compili
 - VirtualSMC.kext			        (Emulates the System Management Controller) <br />
 - WhateverGreen.kext			    (OpenCore, graphic patching) <br />
 
-<br />
 </details>
 
 <br />
@@ -257,7 +256,6 @@ Follow the OpenCore guide to determine which properties to enable and disable fo
 
 Note: all other platform info is redacted from the config.plst file. Create your own via GenSMBIOS
 
-<br />
 </details>
 
 <br />
@@ -359,16 +357,16 @@ do shell script "/usr/local/bin/liquidctl --match kraken set pump speed 20 20 30
 <details>
 <summary><strong>Overclock / Undervolt optimisation</strong></summary>
 <br />
- *info to be added*<br />
+ <i>info to be added</i><br />
 I have 4 bios profiles for different workloads.<br />
 <br />
-__General OC - non-AVX workloads: Coding, Browsing, Gaming__ <br />
+<strong>General OC - non-AVX workloads: Coding, Browsing, Gaming</strong> <br />
 Adaptive (no power/time limits) <br />
 5Ghz core, 4.6Ghz uncore, -0.XXv, -300Mhz AVX offset <br />
 CinebenchR23 = s: m: <br />
 Geekbench = s: m: <br />
 <br />
-__AVX OC - AVX workloads:  Video Editing__ <br />
+<strong>AVX OC - AVX workloads:  Video Editing</strong> <br />
 Adaptive (no power/time limits) <br />
 4.8Ghz core, 4.6Ghz uncore, -0.XXv, -0 AVX offset <br />
 CinebenchR23 = s: m: <br />
@@ -376,7 +374,7 @@ Geekbench = s: m: <br />
 max V: <br />
 max temp: <br />
 <br />
-__Fixed Max__ <br />
+<strong>Fixed Max</strong> <br />
 Fixed core <br />
 4.9Ghz core, 4.6Ghz uncore, 1.33v, -100Mhz AVX offset <br />
 CinebenchR23 = s: m: <br />
@@ -384,7 +382,7 @@ Geekbench = s: m: <br />
 max V: <br />
 max temp: <br />
 <br />
-__Undervolt__<br />
+<strong>Undervolt</strong><br />
 Adaptive <br />
 Stock frequencies, -0.1v <br />
 CinebenchR23 = s: m: <br />
@@ -392,7 +390,7 @@ Geekbench = s: m: <br />
 max V: <br />
 max temp: <br />
 <br />
-__Stock__<br />
+<strong>Stock</strong><br />
 Stock frequencies, -0.1v <br />
 CinebenchR23 = s: m: <br />
 Geekbench = s: m: <br />
