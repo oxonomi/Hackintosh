@@ -35,8 +35,7 @@ Linux:		Debian 12
 <details>
 <summary><strong>Tools</strong></summary>
 <br />
-<pre>
-- [MountEFI](https://github.com/corpnewt/MountEFI) - Tool to mount drives EFI partitions
+- [MountEFI](https://github.com/corpnewt/MountEFI) - Tool to mount drives EFI partitions 
 - [MaciASL](https://github.com/acidanthera/MaciASL) - AML compiler
 - [gfxutil](https://github.com/acidanthera/gfxutil) - Device Properties tool 
 - [VDADecoderChecker](https://github.com/cylonbrain/VDADecoderCheck) – determine PlatformId and DeviceID
@@ -54,7 +53,6 @@ Linux:		Debian 12
 - [Red BiosEditor](https://www.igorslab.de/en/download-area-new-version-of-morepowertool-mpt-and-final-release-of-redbioseditor-rbe/)
 - [HxD](https://mh-nexus.de/en/hxd/) - read bios.rom as hex 
 - [liquidctl](https://github.com/liquidctl/liquidctl) - controlling RGB
-</pre>
 </details>
 
 
