@@ -6,6 +6,7 @@
 
 Making an OpenCore Hackintosh is a very complex process, it requires time, patience and a passion for learning and tinkering.
 Here's an overview of my configuration but this is not a step-by-step guide. This should be only used for reference alongside the [OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/)
+<br />
 
 ## Info
 
@@ -64,7 +65,6 @@ Here's an overview of my configuration but this is not a step-by-step guide. Thi
 <br />
 </details>
 
-<br />
 <br />
 
 ## EFI files
@@ -260,6 +260,7 @@ Note: all other platform info is redacted from the config.plst file. Create your
 <br />
 </details>
 
+<br />
 
 ## BIOS Settings
 <details>
@@ -324,7 +325,6 @@ igYMAAHiAXMJAADxPAAAfQAIAAAAGwAAAAAAAAAAAAB2AAAAAAAAAAAAAAAAAAEAAAAKAAAA9AYAAPME
 </details>
 
 
-<br />
 
 
 
@@ -405,7 +405,6 @@ max temp: <br />
 <br />
 </details>
 
-<br />
 <details>
 <summary><strong>Benchmarks</strong></summary>
 <br />
