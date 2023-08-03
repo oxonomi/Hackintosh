@@ -1,24 +1,26 @@
 # Triple-boot Hackintosh
 ![bootloader-screenshot](https://github.com/oxonomi/Hackintosh/blob/main/images/OpenCanopy-bootloader.jpg?raw=true)
 
-'Hackintosh' a non-Apple computer running macOS. 
+'Hackintosh' a non-Apple computer running macOS. <br />
 'OpenCore' a custom configured boot-loader which injects data into macOS when booting, effectively tricking macOS to believe it's running on apple hardware. A cleaner, more secure and more involved approach to building a hackintosh compared to tools like Clover or Virtual Machines.
 
 Making an OpenCore Hackintosh is a very complex process, it requires time, patience and a passion for learning and tinkering.
 Here's an overview of my configuration but this is not a step-by-step guide. This should be only used for reference alongside the [OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/)
 
+## Info
+
 <details open>
-<summary>## My System</summary>
-<br>
-OpenCore:	0.9.1  
-macOS: 	Ventura 13.3.1  
-Windows:	10  
+<summary>__My System__</summary>
+<br />
+OpenCore:	0.9.1  <br />
+macOS: 	Ventura 13.3.1  <br />
+Windows:	10  <br />
 Linux:		Debian 12
 </details>
 
-
-
-## Hardware	
+<details open>
+<summary>__Hardware__</summary>
+<br />
 - Mobo:		Gigabtye Z490m Gaming X
 - CPU:		Intel i5-10600K
 - GPU:		Sapphire RX 5600 XT
@@ -27,6 +29,8 @@ Linux:		Debian 12
 - Storage:	Crucial P1 1TB (macOS), Crucial MX500 1TB (Windows), Sandisk Ultra Flair 128GB (Linux)
 
 ![sys-info](https://github.com/oxonomi/Hackintosh/blob/main/images/info.png?raw=true)
+</details>
+
 
 
 ## Tools
