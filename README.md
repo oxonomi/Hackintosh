@@ -10,7 +10,7 @@ Here's an overview of my configuration but this is not a step-by-step guide. Thi
 ## Info
 
 <details open>
-<summary>**My System**</summary>
+<summary><strong>My System</strong>strong></summary>
 <br />
 OpenCore:	0.9.1  <br />
 macOS: 	Ventura 13.3.1  <br />
@@ -52,9 +52,8 @@ Linux:		Debian 12
 - [MorePowerTool](https://www.igorslab.de/en/download-area-new-version-of-morepowertool-mpt-and-final-release-of-redbioseditor-rbe/) - adjust gpu bios.rom 
 - [Red BiosEditor](https://www.igorslab.de/en/download-area-new-version-of-morepowertool-mpt-and-final-release-of-redbioseditor-rbe/)
 - [HxD](https://mh-nexus.de/en/hxd/) - read bios.rom as hex 
-- [liquidctl](https://github.com/liquidctl/liquidctl) - controlling RGB 
+- [liquidctl](https://github.com/liquidctl/liquidctl) - controlling RGB
 </details>
-## Tools
 
 
 ## EFI files
@@ -67,14 +66,36 @@ Linux:		Debian 12
 - OpenRuntime.efi		(OpenCore plugin OC_FIRMWARE_RUNTIME protocol)
 </details>
 
-### ACPI 
+<details>
+<summary><strong>ACPI </strong></summary>
+<br />
 - SSDT-SBUS-MCHC.aml	(System Management Bus)
 - SSDT-PLUG.aml		(Better CPU management)
 - SSDT-AWAC.aml		(Legacy RTC clock)
 - SSDT-EC.ami		(Embedded controller)
 - SSDT-UIAC.aml		(USB. Switched to using kext*)
 
-All done manually via DSDT dump, decompiling, converting to SSDTS and compiling SSDTs	
+All created manually via DSDT dump, decompiling, converting to SSDTS and compiling SSDTs	
+</details>
+
+<details>
+<summary><strong>Kexts </strong></summary>
+<br />
+- AppleALC.kext				        (Audio)
+- CPUFriendDataProvider.kext  (CPU power management and performance tuning)
+- IntelMausi.kext			        (Ethernet)
+- Lilu.kext				            (OpenCore, allows kexts to patch)
+- NVMeFix.kext				        (Support for non-Apple NVMe drives)
+- RadeonSensor.kext			      (Reading GPU temps)
+- SMCProcessor.kext			      (CPU temps and power)
+- SMCRadeonGPU.kext			      (GPU sensor output)
+- SMCSuperIO.kext			        (hardware monitoring)
+- USBPorts.kext				        (define USB ports. Replaces SSDT-UIAC)
+- VirtualSMC.kext			        (Emulates the System Management Controller)
+- WhateverGreen.kext			    (OpenCore, graphic patching)
+
+All created manually via DSDT dump, decompiling, converting to SSDTS and compiling SSDTs	
+</details>
 
 ### Kexts
 - AppleALC.kext				        (Audio)
@@ -93,6 +114,29 @@ All done manually via DSDT dump, decompiling, converting to SSDTS and compiling 
 
 ## Config.plist
 Follow the OpenCore guide to determine which properties to enable and disable for your build. Use ProperTree to do an OC snapshot to populate based of your OC files.
+
+<details>
+<summary><strong>Kexts </strong></summary>
+<br />
+
+</details>
+
+<details>
+<summary><strong>MmioWhitelist > Quirks</strong></summary>
+<br />
+| key | value |
+| ----------------------- | ------------- | 
+| AvoidRuntimeDefrag:  |  true |
+| DevirtualiseMmio:  | true |
+| EnableSafeModeSlide:  | true |
+| EnableWriteUnprotector:  | false |
+| ProtectUefiServices:  | true |
+| ProvideCustomSlide:  | true |
+| RebuildAppleMemoryMap:  | true |
+| ResizeAppleGpuBars: |  -1 |
+| SetupVirtualMap:  | false |
+| SyncRuntimePermissions: |  true |
+</details>
 
 ### MmioWhitelist > Quirks
 
