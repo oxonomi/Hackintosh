@@ -293,6 +293,7 @@ Note: all other platform info is redacted from the config.plst file. Create your
 <details>
 <summary><strong>OpenCanopy</strong></summary>
 <br />
+<i>info to be added*</i> 
 </details>
 
 <br />
@@ -357,7 +358,8 @@ do shell script "/usr/local/bin/liquidctl --match kraken set pump speed 20 20 30
 <details>
 <summary><strong>Overclock / Undervolt optimisation</strong></summary>
 <br />
- <i>info to be added</i><br />
+<i>info to be added*</i> 
+<br />
 I have 4 bios profiles for different workloads.<br />
 <br />
 <strong>General OC - non-AVX workloads: Coding, Browsing, Gaming</strong> <br />
