@@ -10,7 +10,7 @@ Here's an overview of my configuration but this is not a step-by-step guide. Thi
 ## Info
 
 <details open>
-<summary>__My System__</summary>
+<summary>**My System**</summary>
 <br />
 OpenCore:	0.9.1  <br />
 macOS: 	Ventura 13.3.1  <br />
@@ -18,8 +18,8 @@ Windows:	10  <br />
 Linux:		Debian 12
 </details>
 
-<details open>
-<summary>__Hardware__</summary>
+<details>
+<summary><strong>Hardware</strong></summary>
 <br />
 - Mobo:		Gigabtye Z490m Gaming X
 - CPU:		Intel i5-10600K
@@ -32,8 +32,9 @@ Linux:		Debian 12
 </details>
 
 
-
-## Tools
+<details>
+<summary><strong>Tools</strong></summary>
+<br />
 - [MountEFI](https://github.com/corpnewt/MountEFI) - Tool to mount drives EFI partitions
 - [MaciASL](https://github.com/acidanthera/MaciASL) - AML compiler
 - [gfxutil](https://github.com/acidanthera/gfxutil) - Device Properties tool 
@@ -52,14 +53,19 @@ Linux:		Debian 12
 - [Red BiosEditor](https://www.igorslab.de/en/download-area-new-version-of-morepowertool-mpt-and-final-release-of-redbioseditor-rbe/)
 - [HxD](https://mh-nexus.de/en/hxd/) - read bios.rom as hex 
 - [liquidctl](https://github.com/liquidctl/liquidctl) - controlling RGB 
+</details>
+## Tools
 
 
 ## EFI files
 
-### Drivers
+<details>
+<summary><strong>Drivers</strong></summary>
+<br />
 - HfsPlus.efi			(HFS file system driver)
 - OpenCanopy.efi		(OpenCore plugin bootloader GUI)
 - OpenRuntime.efi		(OpenCore plugin OC_FIRMWARE_RUNTIME protocol)
+</details>
 
 ### ACPI 
 - SSDT-SBUS-MCHC.aml	(System Management Bus)
