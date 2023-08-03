@@ -10,7 +10,7 @@ Here's an overview of my configuration but this is not a step-by-step guide. Thi
 ## Info
 
 <details open>
-<summary><strong>My System</strong>strong></summary>
+<summary><strong>My System</strong></summary>
 <br />
 OpenCore:	0.9.1  <br />
 macOS: 	Ventura 13.3.1  <br />
@@ -21,12 +21,12 @@ Linux:		Debian 12
 <details>
 <summary><strong>Hardware</strong></summary>
 <br />
-- Mobo:		Gigabtye Z490m Gaming X
-- CPU:		Intel i5-10600K
-- GPU:		Sapphire RX 5600 XT
-- RAM:		Corsair Vengeance 2x16GB 3200
-- Wifi + BT:	Fenvi T919
-- Storage:	Crucial P1 1TB (macOS), Crucial MX500 1TB (Windows), Sandisk Ultra Flair 128GB (Linux)
+- Mobo:		Gigabtye Z490m Gaming X <br />
+- CPU:		Intel i5-10600K <br />
+- GPU:		Sapphire RX 5600 XT <br />
+- RAM:		Corsair Vengeance 2x16GB 3200 <br />
+- Wifi + BT:	Fenvi T919 <br />
+- Storage:	Crucial P1 1TB (macOS), Crucial MX500 1TB (Windows), Sandisk Ultra Flair 128GB (Linux) <br />
 
 ![sys-info](https://github.com/oxonomi/Hackintosh/blob/main/images/info.png?raw=true)
 </details>
@@ -54,7 +54,7 @@ Linux:		Debian 12
 - [Red BiosEditor](https://www.igorslab.de/en/download-area-new-version-of-morepowertool-mpt-and-final-release-of-redbioseditor-rbe/)
 - [HxD](https://mh-nexus.de/en/hxd/) - read bios.rom as hex 
 - [liquidctl](https://github.com/liquidctl/liquidctl) - controlling RGB
-</pre>pre>
+</pre>
 </details>
 
 
@@ -63,55 +63,40 @@ Linux:		Debian 12
 <details>
 <summary><strong>Drivers</strong></summary>
 <br />
-- HfsPlus.efi			(HFS file system driver)
-- OpenCanopy.efi		(OpenCore plugin bootloader GUI)
+- HfsPlus.efi			(HFS file system driver)<br />
+- OpenCanopy.efi		(OpenCore plugin bootloader GUI)<br />
 - OpenRuntime.efi		(OpenCore plugin OC_FIRMWARE_RUNTIME protocol)
 </details>
 
 <details>
 <summary><strong>ACPI </strong></summary>
 <br />
-- SSDT-SBUS-MCHC.aml	(System Management Bus)
-- SSDT-PLUG.aml		(Better CPU management)
-- SSDT-AWAC.aml		(Legacy RTC clock)
-- SSDT-EC.ami		(Embedded controller)
-- SSDT-UIAC.aml		(USB. Switched to using kext*)
-
+- SSDT-SBUS-MCHC.aml	(System Management Bus)<br />
+- SSDT-PLUG.aml		(Better CPU management)<br />
+- SSDT-AWAC.aml		(Legacy RTC clock)<br />
+- SSDT-EC.ami		(Embedded controller)<br />
+- SSDT-UIAC.aml		(USB. Switched to using kext*)<br />
+<br />
 All created manually via DSDT dump, decompiling, converting to SSDTS and compiling SSDTs	
 </details>
 
 <details>
 <summary><strong>Kexts </strong></summary>
 <br />
-- AppleALC.kext				        (Audio)
-- CPUFriendDataProvider.kext  (CPU power management and performance tuning)
-- IntelMausi.kext			        (Ethernet)
-- Lilu.kext				            (OpenCore, allows kexts to patch)
-- NVMeFix.kext				        (Support for non-Apple NVMe drives)
-- RadeonSensor.kext			      (Reading GPU temps)
-- SMCProcessor.kext			      (CPU temps and power)
-- SMCRadeonGPU.kext			      (GPU sensor output)
-- SMCSuperIO.kext			        (hardware monitoring)
-- USBPorts.kext				        (define USB ports. Replaces SSDT-UIAC)
-- VirtualSMC.kext			        (Emulates the System Management Controller)
-- WhateverGreen.kext			    (OpenCore, graphic patching)
-
-All created manually via DSDT dump, decompiling, converting to SSDTS and compiling SSDTs	
+- AppleALC.kext				        (Audio)<br />
+- CPUFriendDataProvider.kext  (CPU power management and performance tuning)<br />
+- IntelMausi.kext			        (Ethernet)<br />
+- Lilu.kext				            (OpenCore, allows kexts to patch)<br />
+- NVMeFix.kext				        (Support for non-Apple NVMe drives)<br />
+- RadeonSensor.kext			      (Reading GPU temps)<br />
+- SMCProcessor.kext			      (CPU temps and power)<br />
+- SMCRadeonGPU.kext			      (GPU sensor output)<br />
+- SMCSuperIO.kext			        (hardware monitoring)<br />
+- USBPorts.kext				        (define USB ports. Replaces SSDT-UIAC)<br />
+- VirtualSMC.kext			        (Emulates the System Management Controller)<br />
+- WhateverGreen.kext			    (OpenCore, graphic patching)<br />
 </details>
 
-### Kexts
-- AppleALC.kext				        (Audio)
-- CPUFriendDataProvider.kext  (CPU power management and performance tuning)
-- IntelMausi.kext			        (Ethernet)
-- Lilu.kext				            (OpenCore, allows kexts to patch)
-- NVMeFix.kext				        (Support for non-Apple NVMe drives)
-- RadeonSensor.kext			      (Reading GPU temps)
-- SMCProcessor.kext			      (CPU temps and power)
-- SMCRadeonGPU.kext			      (GPU sensor output)
-- SMCSuperIO.kext			        (hardware monitoring)
-- USBPorts.kext				        (define USB ports. Replaces SSDT-UIAC)
-- VirtualSMC.kext			        (Emulates the System Management Controller)
-- WhateverGreen.kext			    (OpenCore, graphic patching)
 
 
 ## Config.plist
