@@ -1,5 +1,5 @@
 # Triple-boot Hackintosh
-![bootloader-screenshot](https://github.com/oxonomi/Hackintosh/blob/main/images/OpenCanopy_Rocket.png?raw=true)
+![bootloader-screenshot](https://github.com/oxonomi/Hackintosh/blob/main/images/OpenCanopy-rocket-moon-alien.png?raw=true)
 
 'Hackintosh' a non-Apple computer running macOS. <br />
 'OpenCore' a custom configured boot-loader which injects data into macOS when booting, effectively tricking macOS to believe it's running on apple hardware. A cleaner, more secure and more involved approach to building a hackintosh compared to tools like Clover or Virtual Machines.
