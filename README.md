@@ -390,12 +390,13 @@ Stock frequencies, -0.1v <br />
 +11% Ghz from stock <br />
 ~+7.5% Benchmark from stock<br />
 <br />
-![Cinebench](https://github.com/oxonomi/Hackintosh/blob/main/images/Cinebench-OC.png?raw=true)
+
+![Cinebench](https://github.com/oxonomi/Hackintosh/blob/main/images/Cinebench-OC.png?raw=true)<br />
 <br />
-![Geekbench5](https://github.com/oxonomi/Hackintosh/blob/main/images/Geekbench5-OC.png?raw=true)
+![Geekbench5](https://github.com/oxonomi/Hackintosh/blob/main/images/Geekbench5-OC.png?raw=true)<br />
 <br />
-![Geenbench-opencl](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20OpenCL.png?raw=true)
-![Geekbench-metal](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20Metal.png?raw=true)
+![Geenbench-opencl](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20OpenCL.png?raw=true)<br />
 <br />
+![Geekbench-metal](https://github.com/oxonomi/Hackintosh/blob/main/images/Geek%20bench%20compute%20Metal.png?raw=true)<br />
 </details>
 
