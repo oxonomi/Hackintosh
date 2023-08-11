@@ -362,54 +362,34 @@ do shell script "/usr/local/bin/liquidctl --match kraken set pump speed 20 20 30
 <br />
 I have 4 bios profiles for different workloads.<br />
 <br />
+<strong>Stock</strong><br />
+4.5Ghz core, 4.2Ghz uncore <br />
+<br />
 <strong>General OC - non-AVX workloads: Coding, Browsing, Gaming</strong> <br />
 Adaptive (no power/time limits) <br />
 5Ghz core, 4.6Ghz uncore, -0.XXv, -300Mhz AVX offset <br />
-CinebenchR23 = s: m: <br />
-Geekbench = s: m: <br />
 <br />
 <strong>AVX OC - AVX workloads:  Video Editing</strong> <br />
 Adaptive (no power/time limits) <br />
 4.8Ghz core, 4.6Ghz uncore, -0.XXv, -0 AVX offset <br />
-CinebenchR23 = s: m: <br />
-Geekbench = s: m: <br />
-max V: <br />
-max temp: <br />
 <br />
 <strong>Fixed Max</strong> <br />
 Fixed core <br />
 4.9Ghz core, 4.6Ghz uncore, 1.33v, -100Mhz AVX offset <br />
-CinebenchR23 = s: m: <br />
-Geekbench = s: m: <br />
-max V: <br />
-max temp: <br />
 <br />
 <strong>Undervolt</strong><br />
 Adaptive <br />
 Stock frequencies, -0.1v <br />
-CinebenchR23 = s: m: <br />
-Geekbench = s: m: <br />
-max V: <br />
-max temp: <br />
-<br />
-<strong>Stock</strong><br />
-Stock frequencies, -0.1v <br />
-CinebenchR23 = s: m: <br />
-Geekbench = s: m: <br />
-max V: <br />
-max temp: <br />
-
 <br />
 
-* Either i've either lost the silcon lottery and have a hot chip, or i need a new AIO (maybe because the v1 hack case design)  
-<br />
 </details>
 
 <details>
 <summary><strong>Benchmarks</strong></summary>
 <br />
- 
-Max OC<br />
++11% Ghz from stock <br />
+~+7.5% Benchmark from stock<br />
+<br />
 ![Cinebench](https://github.com/oxonomi/Hackintosh/blob/main/images/Cinebench-OC.png?raw=true)
 <br />
 ![Geekbench5](https://github.com/oxonomi/Hackintosh/blob/main/images/Geekbench5-OC.png?raw=true)
