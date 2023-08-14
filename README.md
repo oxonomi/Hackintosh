@@ -351,6 +351,8 @@ With the same tool I set my CPU AIO pump speed paramaters:
 do shell script "/usr/local/bin/liquidctl --match kraken set pump speed 20 20 30 30 31 40 32 43 33 46 35 50 36 60 38 70 40 80 45 90 50 100"
 ```
 <br />
+<br />
+Save these as .app's to run at login
 </details>
 
 
