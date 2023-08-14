@@ -61,7 +61,7 @@ Here's an overview of my configuration but this is not a step-by-step guide. Thi
 - [Red BiosEditor](https://www.igorslab.de/en/download-area-new-version-of-morepowertool-mpt-and-final-release-of-redbioseditor-rbe/) <br />
 - [HxD](https://mh-nexus.de/en/hxd/) - read bios.rom as hex  <br />
 - [liquidctl](https://github.com/liquidctl/liquidctl) - controlling RGB <br />
-
+- [HiDPI resolutions](https://github.com/xzhih/one-key-hidpi) - Opening up more HiDPI scaling options <br />
 <br />
 </details>
 
