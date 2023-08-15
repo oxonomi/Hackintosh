@@ -326,11 +326,17 @@ igYMAAHiAXMJAADxPAAAfQAIAAAAGwAAAAAAAAAAAAB2AAAAAAAAAAAAAAAAAAEAAAAKAAAA9AYAAPME
 <details>
 <summary><strong>Display / HiDPI</strong></summary>
 <br />
-macOS UI is designed for 'Retina' displays, Apples term for high DPI displays where individual pixels are indiscernible to the human eye at typical viewing distances. Because of this Apple has non-standardised resolutions accross it's product range and therefore Apples System Settings scaling options are unique to each model. This ensures that UI elements and icons don't render blurry when chaging the UI scale. However, this creates a problem when scaling on non-apple displays as the UI can be a little blurry. To counteract this I used [one-key-HiDPI](https://github.com/xzhih/one-key-hidpi) which allows scaling options in System Settings. I set additional custom scaled HiDPI resolutions as: 3010x1260 2580x1080 2150x900 1935x810 Which ensures they retain HiDPI scaling and aren't blurry on my monitor. <br />
+macOS UI is designed for 'Retina' displays, Apples term for high DPI displays where individual pixels are indiscernible to the human eye at typical viewing distances. Because of this Apple has non-standardised resolutions accross it's product range and therefore Apples System Settings scaling options are unique to each model. This ensures that UI elements and icons don't render blurry when chaging the UI scale. However, this creates a problem when scaling on non-apple displays as the UI can be a little blurry. To counteract this enable HiDPI then use use [one-key-HiDPI](https://github.com/xzhih/one-key-hidpi) which allows scaling options in System Settings. I set additional custom scaled HiDPI resolutions as: 3010x1260 2580x1080 2150x900 1935x810 Which ensures they retain HiDPI scaling and aren't blurry on my monitor. <br />
 I predominantly use 3010x1260 <br />
 <br />
+First enable HiDPI:
+ 
+```
+sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
+```
 
-Because of this I can remove Apples font smoothing which typicaly adds a bit of blur so non Retina displays aren't blocky. <br />
+
+Because of this I can remove Apples font smoothing which typicaly adds a bit of blur so non Retina displays aren't blocky: <br />
 ```
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 0
 ```
